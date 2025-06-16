@@ -38,8 +38,16 @@
             font-size: 1.2em;
             font-weight: bold;
             color: black;
-            padding-left: 20px;
+            padding-left: 100px; /* para dejar espacio para la imagen */
             font-family: Verdana, sans-serif;
+            position: relative;
+        }
+
+        .foto-esquina {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 80px;
         }
 
         .contenedor {
@@ -113,27 +121,9 @@
             font-family: 'Arial Black', sans-serif;
             font-size: 1.2em;
         }
-
-        /* Imagen fija arriba a la izquierda (más pequeña) */
-        .logo-superior {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-
-        .logo-superior img {
-            width: 70px;
-            height: auto;
-        }
     </style>
 </head>
 <body>
-
-    <!-- Imagen fija arriba a la izquierda -->
-    <div class="logo-superior">
-        <img src="D:\3RO M VELASCO (Diseño)\hola-removebg-preview.png" alt="Logo">
-    </div>
-
     <div class="unidad-educativa">
         <span class="verde">Unidad</span>
         <span class="amarillo">Educativa</span>
@@ -143,6 +133,9 @@
     </div>
 
     <h2>PROYECTO DEL AREA TECNICA INFORMATICA DE AÑO 2025-2026</h2>
+
+    <!-- Imagen arriba a la izquierda -->
+    <img src="https://raw.githubusercontent.com/SantiagoA9/SamuelVelasco/main/hola-removebg-preview.png" class="foto-esquina" alt="Foto de Samuel Velasco">
 
     <div class="info-estudiante">
         Samuel Velasco 3ro M
@@ -206,6 +199,5 @@
             </li>
         </ul>
     </div>
-
 </body>
 </html>
